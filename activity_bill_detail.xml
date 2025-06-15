@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".BillDetailActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bill Details"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvDetailMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Month: "
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/detail_item_background"/>
+
+    <TextView
+        android:id="@+id/tvDetailUnits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Units Used: "
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/detail_item_background"/>
+
+    <TextView
+        android:id="@+id/tvDetailTotalCharges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Charges: "
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/detail_item_background"/>
+
+    <TextView
+        android:id="@+id/tvDetailRebate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rebate: "
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/detail_item_background"/>
+
+    <TextView
+        android:id="@+id/tvDetailFinalCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Final Cost: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/detail_item_background"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</LinearLayout>
