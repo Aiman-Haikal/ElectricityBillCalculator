@@ -1,0 +1,20 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Android Gradle Plugin version for Android Studio Meerkat
+        classpath 'com.android.tools.build:gradle:8.9.2' // This is a common version for Meerkat
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+
+        // Add the Google Services plugin dependency here
+        classpath 'com.google.gms:google-services:4.4.1' // Use the latest stable version
+    }
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}
