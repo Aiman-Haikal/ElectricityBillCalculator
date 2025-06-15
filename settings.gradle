@@ -1,0 +1,14 @@
+// This file is used to define project-wide settings, including repository management.
+
+// Define how dependencies are resolved for all modules in the project.
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS) // Enforces using repositories defined here
+    repositories {
+        google()        // Google's Maven repository
+        mavenCentral()  // Maven Central repository
+    }
+}
+
+// Include your app module. If you have other modules, add them here too.
+rootProject.name = "ElectricityBillCalculator"
+include ':app'
