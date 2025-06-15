@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Electricity Bill Calculator</string>
+    <string name="about_page_title">About This Application</string>
+    <string name="student_name">AIMAN HAIKAL BIN ZAMRI</string>
+    <string name="student_id">2023115899</string>
+    <string name="course_code">Course Code: CDCS240</string>
+    <string name="course_name">Course Name: MOBILE TECHNOLOGY AND DEVELOPMENT</string>
+    <string name="copyright_statement">© 2025 Electricity Bill Estimator. All rights reserved.</string>
+    <string name="github_link_text">Visit our GitHub page</string>
+    <string name="github_url">https://github.com/Aiman-Haikal/ElectricityBillCalculator</string>
+
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+</resources>
