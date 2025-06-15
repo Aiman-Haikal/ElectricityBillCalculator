@@ -1,0 +1,52 @@
+plugins {
+    id 'com.android.application'
+    // Add the Google Services plugin for Firebase. This should be at the very bottom of the plugins block.
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.electricitybillcalculator'
+    compileSdk 34 // Typically compile with the latest SDK, but minSdk is API 24
+
+    defaultConfig {
+        applicationId "com.example.electricitybillcalculator"
+        minSdk 24 // Minimum API level required for the app to run
+        targetSdk 34 // Target API level, usually the latest stable version
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // AndroidX Libraries
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Firebase Platform (BoM) - Recommended for managing Firebase library versions
+    // It ensures all Firebase libraries you use are compatible.
+    implementation platform('com.google.firebase:firebase-bom:32.8.1') // Use the latest stable version
+
+    // Firebase Firestore (for database)
+    implementation 'com.google.firebase:firebase-firestore'
+    // Firebase Authentication (for user sign-in, even anonymous)
+    implementation 'com.google.firebase:firebase-auth'
+
+    // Testing Libraries
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
